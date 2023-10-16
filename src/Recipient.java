@@ -9,15 +9,15 @@ public abstract class Recipient {
 	public Recipient (String name, String email) { 
 		this.name = name; 
 		this.email = email; 
-		countRecipientObjects++; 
+		++countRecipientObjects; 
 	} 
 	 
 	public String getName() { 
-		return name; 
+		return this.name; 
 	} 
 	 
 	public String getEmail() { 
-		return email; 
+		return this.email; 
 	} 
 	 
 	public static int getCountOfRecipientObject() { 
